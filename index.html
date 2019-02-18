@@ -356,23 +356,21 @@
             <div class="uk-child-width-1-2@s" uk-grid>
               
               <div>
-                <form>
+                <form method="POST" class="form">
                   <fieldset class="uk-fieldset">
               
                       <legend class="uk-legend">Murojat, taklif va fikrlar uchun</legend>
               
                       <div class="uk-margin">
-                          <input class="uk-input" type="text" placeholder="Ism va familiyangiz" required>
+                          <input class="uk-input" type="text" name="ismFamiliya" placeholder="Ism va familiyangiz" required>
                       </div>
 
                       <div class="uk-margin">
-                        <input class="uk-input " type="text" placeholder="Telefon raqamingiz" required>
-                      </div>
-              
-                      
-              
+                        <input class="uk-input " type="text" name="telNomer" placeholder="Telefon raqamingiz" required>
+                      </div>           
+                           
                       <div class="uk-margin">
-                          <textarea class="uk-textarea" rows="5" placeholder="Murojat matni" required></textarea>
+                          <textarea class="uk-textarea" name="messageText" rows="5" placeholder="Murojat matni" required></textarea>
                       </div>                   
               
                   </fieldset>
@@ -412,6 +410,6 @@
 
   <script src="libs/uikit.min.js"></script>
   <script src="libs/uikit-icons.min.js"></script>
-  <script src="js/custom.js"></script>
+  <script src="js/bot.js"></script>
 </body>
 </html>
