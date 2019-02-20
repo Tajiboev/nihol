@@ -9,35 +9,362 @@
 
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 
-    <meta name="description" content="Nihol salomatlik sihatgohi MChJ - Zamolnaviy laborator va tibbiy-diagnostik asbob uskunalar bilan jihozlangan,
-    yevropa tipidagi sihatgohdir" />
+    <meta name="description" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86" />
     <meta name="keywords" content="Nihol, salomatlik, sihatgoh, sanatoriya, sog'lik, dam, dam olish" />
     <meta name="author" content="Mukhammadjon Tajiboev" />
 
-    <base href="../">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
 
     <meta name="theme-color" content="#000000" />
 
-    <link rel="stylesheet" href="libs/uikit.min.css" />
-    <link rel="stylesheet" href="css/main-ru.min.css" />
+    <link rel="stylesheet" href="../libs/uikit.min.css" />
+    <link rel="stylesheet" href="../css/main-ru.min.css" />
 
 
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
 </head>
 
 <body>
-
     <header>
-        <h1>Сайт сейчас под разработкой</h1>
+        <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;
+          cls-inactive: uk-dark; top: 200">
+            <nav class="uk-navbar-container nav-padding uk-box-shadow-small" uk-navbar>
+
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo" href="#">
+                        <img id="logo-image" src="../img/nihol-logo.png" alt="Nihol Salomatlik Sihatgohi" />
+                    </a>
+                </div>
+
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        <li>
+                            <a href="#sihatgoh-haqida" class="navbar-a">
+                                О санатории
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#davolanish" class="navbar-a">
+                                Лечение
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#foto-gallereya" class="navbar-a">
+                                Фото-галлерея
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#kontakt" class="navbar-a">
+                                Связаться с нами
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="navbar-a">Выбрать язык</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="../index.html">O'zbekcha</a></li>
+                                    <li class="uk-active"><a href="ru/index.html">Русский</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-overlay"
+                        href="#"></a>
+                </div>
+            </nav>
+            <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+                <!-- inside of off-canvas menu : start -->
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                    <ul class="uk-nav uk-nav-default uk-nav-center uk-margin-auto-vertical">
+                        <li class="uk-active"><a href="#">Menu</a></li>
+                        <li>
+                            <a href="#sihatgoh-haqida">
+                                О санатории
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#davolanish">
+                                Лечение
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#foto-gallereya">
+                                Фото-галлерея
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#kontakt">
+                                Связаться с нами
+                            </a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="tel:+998905550001">
+                                Телефон: +998 95 300 88 85
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:nihol@gmail.com">
+                                Электронная почта: shuhrat.ismonov77@gmail.com
+                            </a>
+                        </li>
+
+                </div><!-- inside of off-canvas menu : end -->
+            </div>
+        </div>
+
+        <div class="uk-grid uk-padding" uk-grid>
+            <div class="uk-width-1-2@m">
+                <h1 id="promo">
+                    Санаторий "Нихол" - залог вашего здоровья!
+                </h1>
+                <p>
+                    Санаторий "Нихол" - жемчужина Ферганской долины, расположенная в городе Учкурган.
+                    <ul>
+                        <li><span uk-icon="icon: check"></span>Чистый воздух</li>
+                        <li><span uk-icon="icon: check"></span> гостеприимный персонал</li>
+                        <li><span uk-icon="icon: check"></span> качественное обслуживание</li>
+                        <li><span uk-icon="icon: check"></span> вкусные диетические блюда</li>
+                        <li><span uk-icon="icon: check"></span> приятный отдых</li>
+                        <li><span uk-icon="icon: check"></span> лечебная минеральная вода бьюшаяся из недр земли
+                            глубиной 2250 метров </li>
+                    </ul>
+
+                    всё это в санаторий "Нихол"!
+                    <br>
+                    <br>
+                    <div>
+                        <a href="#sihatgoh-haqida" class="uk-button uk-button-primary uk-box-shadow-medium">Узнать
+                            больше</a>
+                        <a href="#kontakt" class="uk-button uk-button-secondary uk-box-shadow-small uk-margin-small">Контакты</a>
+                    </div>
+
+                </p>
+            </div>
+            <div class="uk-width-1-2@m">
+                <video id="promo-video" class="uk-box-shadow-medium" controls poster="../img/webp/nihol-5.webp">
+                    <source src="../video/promo.webm" type="video/webm" />
+                    <source src="../video/promo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
     </header>
 
+    <main>
+
+        <section>
+            <h2 class="uk-text-center uk-padding-small" id="sihatgoh-haqida">О санатории</h2>
+            <div class="uk-text-center">
+                <div>
+                    <p>
+                        ООО «Nihol salomatlik sihatgohi» - санаторий европейского типа, оснащенный современными
+                        лабораторными и медицинским диагностическими оборудованиями. Санаторий расположен в 40 км от
+                        Намангана, на берегах реки Норин и Большого Ферганского канала, вытекающего из хребта
+                        Тянь-Шаня.
+
+                        Каждому отдыхающему предлагаются качественные комплексные лечебные услуги, и созданы все
+                        условия для комфортного и полезного отдыха и лечения.
+
+                        На территории санатория расположен термальный источник, вытекающий из глубины в 2250 метров,
+                        обогащенная полезными для организма человека микроэлементами, йодом, бромом и другими
+                        элементами вода которого используется в оздоровительных ваннах и грязевых лечениях.
+                        Помимо натуральных средств, применяется современная физиотерапия, психотерапия, фитотерапия,
+                        диетология, иглотерапия, ЛФК и массаж, а также проводится реабилитация пациентов с различными
+                        травматическими и неврологическими расстройствами.
+
+                        Природные факторы благополучно дейсвуют для пациентов с нарушениями нервной системы,
+                        сердечно-сосудистыми, пищеварительными и гинекологическими заболеваниями.
+
+                    </p>
+                </div>
+
+            </div>
+        </section> <!-- sihatgoh-haqida -end -->
+
+        <section>
+            <h2 class="uk-text-center uk-padding-small" id="davolanish">
+                Лечение
+            </h2>
+
+            <div>
+                <span>Санаторий «Нихол» проводит обследование и квалифицированное лечение следующих заболеваний:</span>
+                <ul class="uk-list uk-padding-small uk-padding-remove-vertical">
+
+                    <li>
+                        <b>Заболеваня опорно-двигательной системы:</b> Артрит, полиартрит, остеоартроз, остеохандроз,
+                        спондилоартроз, ревматоидный артрит, грыжа позвоночника.
+                    </li>
+                    <li>
+                        <b>Заболевания нервной (центральной и периферической) системы:</b> Неврастения, лемнгалгия,
+                        люмбохиалгия, невриты, полиневриты.
+                    </li>
+                    <li>
+                        <b>Заболевания органов пищеварения:</b>
+                        Хроническое воспаление желудка и кишечника (гастрит, колит), желудочная недостаточность и
+                        ремиссии двенадцатиперстной кишки, хронический гепатит, холизистит.
+                    </li>
+                    <li>
+                        <b>Гинекологические заболевания:</b> Заболевания гинекологических органов, эрозия.
+                    </li>
+                    <li>
+                        <b>Андрологические заболевания:</b> Заболевания предстательной железы и половая дисфункция.
+                    </li>
+                    <li>
+                        <b>Заболевания сердечно-сосудистой системы:</b> Гипертония (фаза 1, фаза 2), ишемическая
+                        болезнь сердца (без осложнений).
+                    </li>
+                    <li>
+                        <b>Эндокринологические заболевания:</b> Сахарный диабет (легкий и умеренный), заболевания
+                        щитовидной железы.
+                    </li>
+
+                    <li>
+                        <b>
+                            Заболевания почек и мочевыводящих путей:</b> хронический пиелонефрит, уретрит.
+                    </li>
+                </ul>
+            </div>
+        </section> <!-- davolanish -end -->
+
+        <section>
+            <h2 class="uk-text-center" id="foto-gallereya">Фото-галлерея</h2>
+
+            <div class="uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid uk-lightbox="animation: slide">
+                <div>
+                    <a class="uk-inline" href="../img/webp/nihol-3.webp" data-caption="Nihol salomatlik sihatgohi">
+                        <img class="lozad" data-src="../img/webp/nihol-3.webp" alt="Nihol salomatlik sihatgohi">
+                    </a>
+                </div>
+                <div>
+                    <a class="uk-inline" href="../img/webp/nihol-2.webp" data-caption="Nihol salomatlik sihatgohi">
+                        <img class="lozad" data-src="../img/webp/nihol-2.webp" alt="Nihol salomatlik sihatgohi">
+                    </a>
+                </div>
+                <div>
+                    <a class="uk-inline" href="../img/webp/nihol-1.webp" data-caption="Nihol salomatlik sihatgohi">
+                        <img class="lozad" data-src="../img/webp/nihol-1.webp" alt="Nihol salomatlik sihatgohi">
+                    </a>
+                </div>
+                <div>
+                    <a class="uk-inline" href="../img/webp/nihol-4.webp" data-caption="Nihol salomatlik sihatgohi">
+                        <img class="lozad" data-src="../img/webp/nihol-4.webp" alt="Nihol salomatlik sihatgohi">
+                    </a>
+                </div>
+                <div>
+                    <a class="uk-inline" href="../img/webp/nihol-5.webp" data-caption="Nihol salomatlik sihatgohi">
+                        <img class="lozad" data-src="../img/webp/nihol-5.webp" alt="Nihol salomatlik sihatgohi">
+                    </a>
+                </div>
+                <div>
+                    <a class="uk-inline" href="../img/webp/nihol-6.webp" data-caption="Nihol salomatlik sihatgohi">
+                        <img class="lozad" data-src="../img/webp/nihol-6.webp" alt="Nihol salomatlik sihatgohi">
+                    </a>
+                </div>
+                <div>
+                    <a class="uk-inline" href="../img/webp/nihol-7.webp" data-caption="Nihol salomatlik sihatgohi">
+                        <img class="lozad" data-src="../img/webp/nihol-7.webp" alt="Nihol salomatlik sihatgohi">
+                    </a>
+                </div>
+                <div>
+                    <a class="uk-inline" href="../img/webp/nihol-8.webp" data-caption="Nihol salomatlik sihatgohi">
+                        <img class="lozad" data-src="../img/webp/nihol-8.webp" alt="Nihol salomatlik sihatgohi">
+                    </a>
+                </div>
+                <div>
+                    <a class="uk-inline" href="../img/webp/nihol-9.webp" data-caption="Nihol salomatlik sihatgohi">
+                        <img class="lozad" data-src="../img/webp/nihol-9.webp" alt="Nihol salomatlik sihatgohi">
+                    </a>
+                </div>
+                <div>
+                    <a class="uk-inline" href="../img/webp/nihol-10.webp" data-caption="Nihol salomatlik sihatgohi">
+                        <img class="lozad" data-src="../img/webp/nihol-10.webp" alt="Nihol salomatlik sihatgohi">
+                    </a>
+                </div>
+                <div>
+                    <a class="uk-inline" href="../img/webp/nihol-11.webp" data-caption="Nihol salomatlik sihatgohi">
+                        <img class="lozad" data-src="../img/webp/nihol-11.webp" alt="Nihol salomatlik sihatgohi">
+                    </a>
+                </div>
+                <div>
+                    <a class="uk-inline" href="../img/webp/nihol-12.webp" data-caption="Nihol salomatlik sihatgohi">
+                        <img class="lozad" data-src="../img/webp/nihol-12.webp" alt="Nihol salomatlik sihatgohi">
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2 class="uk-text-center" id="kontakt">Связаться с нами</h2>
+            <div class="uk-child-width-1-2@s" uk-grid>
+
+                <div>
+                    <form method="POST" class="form">
+                        <fieldset class="uk-fieldset">
+
+                            <legend class="uk-legend">Контактная форма</legend>
+
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" name="ismFamiliya" placeholder="Имя и фамилия"
+                                    required>
+                            </div>
+
+                            <div class="uk-margin">
+                                <input class="uk-input " type="text" name="telNomer" placeholder="Номер телефона"
+                                    required>
+                            </div>
+
+                            <div class="uk-margin">
+                                <textarea class="uk-textarea" name="messageText" rows="5" placeholder="Текст заявки"
+                                    required></textarea>
+                            </div>
+
+                        </fieldset>
+                        <button class="uk-button uk-button-primary uk-box-shadow-medium">Отправить</button>
+                    </form>
+                    <div>
+                        <p>
+                            <br>
+                            Телефон для справок: +998 95 300 88 85 <br>
+                            Электронная почта: shuhrat.ismonov77@gmail.com <br>
+                            Адрес: Учкурган, улица Ёгду, дом №1 <br>
+                            <hr>
+                            Время работы: Рабочие дни, от 9:00 до 17:00
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Uchqorgon&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section><!-- kontakt -end -->
+    </main>
+
+    <footer>
+        <div class="uk-padding uk-text-center">
+            ООО "Нихол саломатлик сихатгохи" &copy; 2019
+        </div>
+    </footer>
+
+    <script src="../libs/uikit.min.js"></script>
+    <script src="../libs/uikit-icons.min.js"></script>
+    <script src="../js/bot.js"></script>
 </body>
 
 </html>
