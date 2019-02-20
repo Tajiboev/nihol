@@ -1,3 +1,6 @@
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+
 const TOKEN = "789587579:AAGzhq163NY7dvgPwH4QfP74VPIc-6zidOw"; // токен от BotFather
 const CHAT_ID = -301396001; // chat_id для телеграм
 
