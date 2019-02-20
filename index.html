@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
+
 <head>
   <meta charset="utf-8" />
 
@@ -7,60 +8,77 @@
   <meta name="description" content="Nihol salomatlik sihatgohi MChJ - Zamolnaviy laborator va tibbiy-diagnostik asbob uskunalar bilan jihozlangan,
   yevropa tipidagi sihatgohdir" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86" />
   <meta name="keywords" content="Nihol, salomatlik, sihatgoh, sanatoriya, sog'lik, dam, dam olish" />
   <meta name="author" content="Mukhammadjon Tajiboev" />
 
-  <link rel="icon" href="img/favicon/favicon.png" />
-  <link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href="img/favicon/favicon.png"
-  />
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
 
   <meta name="theme-color" content="#000000" />
 
   <link rel="stylesheet" href="libs/uikit.min.css" />
   <link rel="stylesheet" href="css/main.min.css" />
 
-  <link
-    rel="preload"
-    href="fonts/Eina-Bold/Eina-Bold.woff2"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  />
+  <link rel="preload" href="fonts/Eina-Bold/Eina-Bold.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link
-    rel="preload"
-    href="fonts/Eina-Regular/Eina-Regular.woff2"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  />
+  <link rel="preload" href="fonts/Eina-Regular/Eina-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Webpage",
+      "url": "https://www.nihol-sihatgoh.uz",
+      "name": "Nihol salomatlik sihatgohi",
+      "headline": "Nihol salomatlik sihatgohi - sog'lom hayot makoni!",
+      "description": "Nihol salomatlik sihatgohi MChJ - Zamolnaviy laborator va tibbiy-diagnostik asbob uskunalar bilan jihozlangan,
+      yevropa tipidagi sihatgohdir ",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nihol-sihatgoh.uz"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nihol salomatlik sihatgohi MChJ",
+        "logo": {
+          "url": "https://www.example.com/logo-blue.svg",
+          "width": 175,
+          "height": 60,
+          "@type": "ImageObject"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.example.com/leader.png",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  </script>
+  <!-- schema ni tugatish kerak -->
+
 </head>
 
 <body>
+  <div class="uk-alert-danger uk-margin-remove" uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+    <h3>Diqqat!</h3>
+    <p>Ushbu sayt hozirda <b>test rejimida</b> va yaqin orada <b>www.nihol-salomatlik.uz</b> adresi orqali ishlay
+      boshlaydi!</p>
+  </div>
   <header>
-    <div
-      uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;
-    cls-inactive: uk-dark; top: 200"
-    >
+    <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;
+    cls-inactive: uk-dark; top: 200">
       <nav class="uk-navbar-container nav-padding uk-box-shadow-small" uk-navbar>
-        
+
         <div class="uk-navbar-left">
           <a class="uk-navbar-item uk-logo" href="#">
-            <img
-              id="logo-image"
-              src="img/nihol-logo.png"
-              alt="Nihol Salomatlik Sihatgohi"
-            />
+            <img id="logo-image" src="img/nihol-logo.png" alt="Nihol Salomatlik Sihatgohi" />
           </a>
         </div>
-        
+
         <div class="uk-navbar-right">
           <ul class="uk-navbar-nav uk-visible@m">
             <li>
@@ -79,69 +97,62 @@
               </a>
             </li>
             <li>
-                <a href="#kontakt" class="navbar-a">
-                  Biz bilan bog'lanish
-                </a>
-              </li>
+              <a href="#kontakt" class="navbar-a">
+                Biz bilan bog'lanish
+              </a>
+            </li>
             <li>
               <a href="#" class="navbar-a">Tilni tanlash</a>
               <div class="uk-navbar-dropdown">
                 <ul class="uk-nav uk-navbar-dropdown-nav">
                   <li class="uk-active"><a href="#">O'zbekcha</a></li>
-                  <li><a href="#">Russian</a></li>
+                  <li><a href="#" style="font-family: sans-serif">Русский</a></li>
                   <li><a href="#">English</a></li>
                 </ul>
               </div>
-            </li>         
+            </li>
           </ul>
-          
-          <a
-            class="uk-navbar-toggle uk-hidden@m"
-            uk-navbar-toggle-icon
-            uk-toggle="target: #offcanvas-overlay"
-            href="#"
-          ></a>
+
+          <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-overlay" href="#"></a>
         </div>
       </nav>
       <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
         <!-- inside of off-canvas menu : start -->
         <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-          <ul
-            class="uk-nav uk-nav-default uk-nav-center uk-margin-auto-vertical"
-          >
+          <ul class="uk-nav uk-nav-default uk-nav-center uk-margin-auto-vertical">
             <li class="uk-active"><a href="#">Menu</a></li>
             <li>
-                <a href="#sihatgoh-haqida">
-                  Sihatgoh haqida
-                </a>
-              </li>
-              <li>
-                <a href="#davolanish">
-                  Davolanish
-                </a>
-              </li>
-              <li>
-                <a href="#foto-gallereya">
-                  Foto gallereya
-                </a>
-              </li>
-              <li>
-                <a href="#kontakt">
-                  Biz bilan bog'lanish
-                </a>
-              </li>
-              <hr>
-              <li>
-                  <a href="tel:+998905550001">
-                    Telefon: +998 90 555 00 01
-                  </a>
-              </li>
-              <li>
-                <a href="mailto:nihol@gmail.com">
-                  E-mail: nihol@gmail.com
-                </a>
-              </li>
-                    
+              <a href="#sihatgoh-haqida">
+                Sihatgoh haqida
+              </a>
+            </li>
+            <li>
+              <a href="#davolanish">
+                Davolanish
+              </a>
+            </li>
+            <li>
+              <a href="#foto-gallereya">
+                Foto gallereya
+              </a>
+            </li>
+            <li>
+              <a href="#kontakt">
+                Biz bilan bog'lanish
+              </a>
+            </li>
+            <hr>
+            <li>
+              <a href="tel:+998905550001">
+                Telefon: +998 95 300 88 85
+              </a>
+            </li>
+            <li>
+              <a href="mailto:nihol@gmail.com">
+                E-mail: shuhrat.ismonov77@gmail.com
+              </a>
+            </li>
+
         </div><!-- inside of off-canvas menu : end -->
       </div>
     </div>
@@ -153,7 +164,7 @@
         </h1>
         <p>
           "Nihol" salomatlik sihatgohi Uchqorgon tumanining baxavo hududida
-          joylashgan, vodiyning haqiqiy marvarid maskanidir. 
+          joylashgan, vodiyning haqiqiy marvarid maskanidir.
           <ul>
             <li><span uk-icon="icon: check"></span> So'lim tabiyat</li>
             <li><span uk-icon="icon: check"></span> xush muomila hodimlar</li>
@@ -162,12 +173,13 @@
             <li><span uk-icon="icon: check"></span> maroqli hordiq</li>
             <li><span uk-icon="icon: check"></span> 2250 metr qaridanotilib chiquvchi shifobaxsh madanli suv</li>
           </ul>
-          
+
           Bulanring bari "Nihol" salomatlik
           sihatgohida. <br> <br>
           <div>
-            <a href="#sihatgoh-haqida" class="uk-button uk-button-primary uk-box-shadow-medium">Batafsil ma'lumot</a>
-            <a href="#kontakt" class="uk-button uk-button-secondary uk-box-shadow-small">Kontakt</a>
+            <a href="#sihatgoh-haqida" class="uk-button uk-button-primary uk-box-shadow-medium">Batafsil
+              ma'lumot</a>
+            <a href="#kontakt" class="uk-button uk-button-secondary uk-box-shadow-small uk-margin-small">Kontakt</a>
           </div>
 
         </p>
@@ -177,239 +189,247 @@
           <source src="video/promo.webm" type="video/webm" />
           <!-- <source src="https://quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg"> -->
         </video>
-      </div>      
+      </div>
     </div>
   </header>
-  
+
   <main>
 
-      <section>
-        <h2 class="uk-text-center uk-padding-small"  id="sihatgoh-haqida">Sihatgoh haqida</h2>
-        <div class="uk-grid uk-child-width-1-2@m" uk-grid>
-            <div>
-                <p>
-                    "Nihol salomatlik sihatgohi" MChJ - Zamolnaviy laborator va tibbiy-diagnostik asbob uskunalar bilan jihozlangan,
-                    yevropa tipidagi sihatgohdir. Sihatgoh 
-                    Namangan shaxridan 40km masofada, Tyan-shan tizmalaridan oqib
-                    keluvchi Norin daryosi va Katta Fargo'ona kanali yoqasida joylashgan.         
-                </p>
-    
-                <p>
-                  Sihatgohdagi har bir dam oluvchiga yuqori sifatli kompleks davolash hizmatlari taklif qilinadi va
-                  qulay va foydali dam olish va davolanish uchun barcha sharoitlar muhayyo qilinadi.
-                </p>
-                <p>
-                  Sihatgoh hududida 2245 metr qaridan oqib chiquvchi termal buloq joylashgan bolib, uning
-                  odam organizmiga foydali bolgan mikroelementlar, yod-brom va boshqa elementlarga boy bolgan
-                  madanli suvi davolash vannalari va balchiq bilan davolash jarayonlarida ishlatiladi.
-                  Tabiiy davolash vositalaridan tashqari sihatgohda zamonaviy fizioterapiya,
-                  psixoterapiya, fitoterapiya, dietologiya, igna sanchish, LFK va massaj, hamda,
-                  turli travmatik va nevrologik kasalliklarni boshdan kechirgan bemorlarning reabilitatsiyasi
-                  o'tkaziladi.
-                </p>
-              </div>
-              <div>
-                <p>
-                  Sihatgohda yurak-qon tomir, ovqat hazm qilish, harakat-tayanch a'zolari, asab tizimi, ginekologik kasalliklar
-                  bilan og'rigan bemorlar uchun shifobaxsh tabiiy omillar bo'lib 2245 metr chuqurlikdan chiquvchi yod-bromli va boshqa
-                  kopgina minerallarga boy bo'lgan termal ma'danli suvlar ichish va vannalar berish uchun qollaniladi.
-                
-                  Turli xil terapevtik va nevrologik kasalliklar bilan og'rigan bemorlarning sog'ligini tiklash va reabilitatsiya
-                  o'tkaziladi.
-                </p>
-                <p>
-                  Zamolnaviy tashxislash va davolash asbob-uskunalari yordamida 
-                  <em>fizioterapiya,</em>
-                  <em>mineral suv bilan davolash,</em>
-                  <em>davolash badan-tarbiyasi,</em>
-                  <em>uqalsh,</em>
-                  <em>psixoterapiya,</em>
-                  <em>igloterapiya,</em>
-                  <em>parafin</em>
-                  va
-                  <em>shifobaxt balchiq bilan davolash,</em>
-                  <em>fitobar</em> va <em>parhez ovqatlar</em>
-                  sizning sog'ligingizni tiklash uchun faoliyat ko'rsatadi.
-                </p>               
-              </div>
-    
+    <section>
+      <h2 class="uk-text-center uk-padding-small" id="sihatgoh-haqida">Sihatgoh haqida</h2>
+      <div class="uk-grid uk-child-width-1-2@m" uk-grid>
+        <div>
+          <p>
+            "Nihol salomatlik sihatgohi" MChJ - Zamolnaviy laborator va tibbiy-diagnostik asbob uskunalar bilan
+            jihozlangan,
+            yevropa tipidagi sihatgohdir. Sihatgoh
+            Namangan shaxridan 40km masofada, Tyan-shan tizmalaridan oqib
+            keluvchi Norin daryosi va Katta Fargo'ona kanali yoqasida joylashgan.
+          </p>
+
+          <p>
+            Sihatgohdagi har bir dam oluvchiga yuqori sifatli kompleks davolash hizmatlari taklif qilinadi va
+            qulay va foydali dam olish va davolanish uchun barcha sharoitlar muhayyo qilinadi.
+          </p>
+          <p>
+            Sihatgoh hududida 2245 metr qaridan oqib chiquvchi termal buloq joylashgan bolib, uning
+            odam organizmiga foydali bolgan mikroelementlar, yod-brom va boshqa elementlarga boy bolgan
+            madanli suvi davolash vannalari va balchiq bilan davolash jarayonlarida ishlatiladi.
+            Tabiiy davolash vositalaridan tashqari sihatgohda zamonaviy fizioterapiya,
+            psixoterapiya, fitoterapiya, dietologiya, igna sanchish, LFK va massaj, hamda,
+            turli travmatik va nevrologik kasalliklarni boshdan kechirgan bemorlarning reabilitatsiyasi
+            o'tkaziladi.
+          </p>
         </div>
-      </section> <!-- sihatgoh-haqida -end -->
+        <div>
+          <p>
+            Sihatgohda yurak-qon tomir, ovqat hazm qilish, harakat-tayanch a'zolari, asab tizimi, ginekologik
+            kasalliklar
+            bilan og'rigan bemorlar uchun shifobaxsh tabiiy omillar bo'lib 2245 metr chuqurlikdan chiquvchi yod-bromli
+            va boshqa
+            kopgina minerallarga boy bo'lgan termal ma'danli suvlar ichish va vannalar berish uchun qollaniladi.
 
-      <section>
-          <h2 class="uk-text-center uk-padding-small" id="davolanish">
-              Davolanish
-          </h2>                         
+            Turli xil terapevtik va nevrologik kasalliklar bilan og'rigan bemorlarning sog'ligini tiklash va
+            reabilitatsiya
+            o'tkaziladi.
+          </p>
+          <p>
+            Zamolnaviy tashxislash va davolash asbob-uskunalari yordamida
+            <em>fizioterapiya,</em>
+            <em>mineral suv bilan davolash,</em>
+            <em>davolash badan-tarbiyasi,</em>
+            <em>uqalsh,</em>
+            <em>psixoterapiya,</em>
+            <em>igloterapiya,</em>
+            <em>parafin</em>
+            va
+            <em>shifobaxt balchiq bilan davolash,</em>
+            <em>fitobar</em> va <em>parhez ovqatlar</em>
+            sizning sog'ligingizni tiklash uchun faoliyat ko'rsatadi.
+          </p>
+        </div>
 
-            <div>
-              <span>Sihatgohda davolanuvchi kasalliklar</span>
-              <ul class="uk-list uk-padding-small uk-padding-remove-vertical">
-                
-                <li>
-                  <b>Tayanch-harakat a'zolari kasalliklari:</b> Artrit, poliartrit, osteoartrit, osteohandroz,
-                  spondiloartroz, revmatoid artrit, umurtqalararo disk churrasi
-                </li>
-                <li>
-                  <b>Asab (markaziy va perifik) tizimi kasalliklari:</b> Nevrasteniya, lyumbalgiya, lyumboishialgiya,
-                    nevrit, polinevrit.
-                </li>
-                <li>
-                  <b>Ozqat hazm qilish a'zolari kasalliklari:</b> Surunkali oshqozon va ichak yalliglanishi (gastrit, kolit) 
-                    remissiya davri, suruknali oshqozon va 12 barmoqli ichak yara kasalliklarining remissiya davri, surunkali gepatit,
-                    holiesistit.
-                </li>
-                <li>
-                  <b>Ginekologik kasalliklar:</b> Ginekologik a'zolar yalliglanishi kasalliklari, eroziyalar.
-                </li>
-                <li>
-                  <b>Andrologik kasalliklar:</b> Prostata bezi kasalliklari va jinsiy quvvatsizlik.
-                </li>
-                <li>
-                  <b>Yurak-qon tomir kasalliklari:</b> Gipertoniya kasalliklari (1-2-bosqichi), yurak ishemik kasalliklari
-                  (asoratlarsiz).
-                </li>
-                <li>
-                  <b>Endokrinologik kasalliklar:</b> Qandli diabet (yengil va o'rta darajadagi), qalqonsimon bez kasalliklari.
-                </li>
+      </div>
+    </section> <!-- sihatgoh-haqida -end -->
 
-                <li>
-                  <b>Buyrak va siydik yo'li kasalliklari:</b> Surunkali pielonefrit, uretrit.
-                </li>
+    <section>
+      <h2 class="uk-text-center uk-padding-small" id="davolanish">
+        Davolanish
+      </h2>
 
-              </ul>
+      <div>
+        <span>Sihatgohda davolanuvchi kasalliklar</span>
+        <ul class="uk-list uk-padding-small uk-padding-remove-vertical">
 
-              
+          <li>
+            <b>Tayanch-harakat a'zolari kasalliklari:</b> Artrit, poliartrit, osteoartrit, osteohandroz,
+            spondiloartroz, revmatoid artrit, umurtqalararo disk churrasi
+          </li>
+          <li>
+            <b>Asab (markaziy va perifik) tizimi kasalliklari:</b> Nevrasteniya, lyumbalgiya, lyumboishialgiya,
+            nevrit, polinevrit.
+          </li>
+          <li>
+            <b>Ozqat hazm qilish a'zolari kasalliklari:</b> Surunkali oshqozon va ichak yalliglanishi (gastrit, kolit)
+            remissiya davri, suruknali oshqozon va 12 barmoqli ichak yara kasalliklarining remissiya davri, surunkali
+            gepatit,
+            holiesistit.
+          </li>
+          <li>
+            <b>Ginekologik kasalliklar:</b> Ginekologik a'zolar yalliglanishi kasalliklari, eroziyalar.
+          </li>
+          <li>
+            <b>Andrologik kasalliklar:</b> Prostata bezi kasalliklari va jinsiy quvvatsizlik.
+          </li>
+          <li>
+            <b>Yurak-qon tomir kasalliklari:</b> Gipertoniya kasalliklari (1-2-bosqichi), yurak ishemik kasalliklari
+            (asoratlarsiz).
+          </li>
+          <li>
+            <b>Endokrinologik kasalliklar:</b> Qandli diabet (yengil va o'rta darajadagi), qalqonsimon bez
+            kasalliklari.
+          </li>
 
+          <li>
+            <b>Buyrak va siydik yo'li kasalliklari:</b> Surunkali pielonefrit, uretrit.
+          </li>
+
+        </ul>
+
+
+
+      </div>
+    </section> <!-- davolanish -end -->
+
+    <section>
+      <h2 class="uk-text-center" id="foto-gallereya">Foto-gallereya</h2>
+
+      <div class="uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid uk-lightbox="animation: slide">
+        <div>
+          <a class="uk-inline" href="img/webp/nihol-3.webp" data-caption="Nihol salomatlik sihatgohi">
+            <img src="img/webp/nihol-3.webp" alt="Nihol salomatlik sihatgohi">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="img/webp/nihol-2.webp" data-caption="Nihol salomatlik sihatgohi">
+            <img src="img/webp/nihol-2.webp" alt="Nihol salomatlik sihatgohi">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="img/webp/nihol-1.webp" data-caption="Nihol salomatlik sihatgohi">
+            <img src="img/webp/nihol-1.webp" alt="Nihol salomatlik sihatgohi">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="img/webp/nihol-4.webp" data-caption="Nihol salomatlik sihatgohi">
+            <img src="img/webp/nihol-4.webp" alt="Nihol salomatlik sihatgohi">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="img/webp/nihol-5.webp" data-caption="Nihol salomatlik sihatgohi">
+            <img src="img/webp/nihol-5.webp" alt="Nihol salomatlik sihatgohi">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="img/webp/nihol-6.webp" data-caption="Nihol salomatlik sihatgohi">
+            <img src="img/webp/nihol-6.webp" alt="Nihol salomatlik sihatgohi">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="img/webp/nihol-7.webp" data-caption="Nihol salomatlik sihatgohi">
+            <img src="img/webp/nihol-7.webp" alt="Nihol salomatlik sihatgohi">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="img/webp/nihol-8.webp" data-caption="Nihol salomatlik sihatgohi">
+            <img src="img/webp/nihol-8.webp" alt="Nihol salomatlik sihatgohi">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="img/webp/nihol-9.webp" data-caption="Nihol salomatlik sihatgohi">
+            <img src="img/webp/nihol-9.webp" alt="Nihol salomatlik sihatgohi">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="img/webp/nihol-10.webp" data-caption="Nihol salomatlik sihatgohi">
+            <img src="img/webp/nihol-10.webp" alt="Nihol salomatlik sihatgohi">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="img/webp/nihol-11.webp" data-caption="Nihol salomatlik sihatgohi">
+            <img src="img/webp/nihol-11.webp" alt="Nihol salomatlik sihatgohi">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="img/webp/nihol-12.webp" data-caption="Nihol salomatlik sihatgohi">
+            <img src="img/webp/nihol-12.webp" alt="Nihol salomatlik sihatgohi">
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2 class="uk-text-center" id="kontakt">Biz bilan bog'laning</h2>
+      <div class="uk-child-width-1-2@s" uk-grid>
+
+        <div>
+          <form method="POST" class="form">
+            <fieldset class="uk-fieldset">
+
+              <legend class="uk-legend">Murojat, taklif va fikrlar uchun</legend>
+
+              <div class="uk-margin">
+                <input class="uk-input" type="text" name="ismFamiliya" placeholder="Ism va familiyangiz" required>
+              </div>
+
+              <div class="uk-margin">
+                <input class="uk-input " type="text" name="telNomer" placeholder="Telefon raqamingiz" required>
+              </div>
+
+              <div class="uk-margin">
+                <textarea class="uk-textarea" name="messageText" rows="5" placeholder="Murojat matni" required></textarea>
+              </div>
+
+            </fieldset>
+            <button class="uk-button uk-button-primary uk-box-shadow-medium">Yuborish</button>
+          </form>
+          <div>
+            <p>
+              <br>
+              Murojat uchun telefon: +998 90 555 00 00 <br>
+              Elektron pochta: nihol@gmail.com <br>
+              Manzil: Uchqorgon tumani, Yog'du MFY, 1-uy <br>
+              <hr>
+              Ish vaqti: Ish kunlari, 9:00 dan 17:00 gacha
+            </p>
           </div>
-        </section> <!-- davolanish -end -->
-            
-        <section>
-              <h2 class="uk-text-center" id="foto-gallereya">Foto-gallereya</h2>
+        </div>
 
-              <div class="uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid uk-lightbox="animation: slide">
-                  <div>
-                      <a class="uk-inline" href="img/webp/nihol-3.webp" data-caption="Nihol salomatlik sihatgohi">
-                          <img src="img/webp/nihol-3.webp" alt="Nihol salomatlik sihatgohi">
-                      </a>
-                  </div>
-                  <div>
-                      <a class="uk-inline" href="img/webp/nihol-2.webp" data-caption="Nihol salomatlik sihatgohi">
-                          <img src="img/webp/nihol-2.webp" alt="Nihol salomatlik sihatgohi">
-                      </a>
-                  </div>
-                  <div>
-                      <a class="uk-inline" href="img/webp/nihol-1.webp" data-caption="Nihol salomatlik sihatgohi">
-                          <img src="img/webp/nihol-1.webp" alt="Nihol salomatlik sihatgohi">
-                      </a>
-                  </div>
-                  <div>
-                      <a class="uk-inline" href="img/webp/nihol-4.webp" data-caption="Nihol salomatlik sihatgohi">
-                          <img src="img/webp/nihol-4.webp" alt="Nihol salomatlik sihatgohi">
-                      </a>
-                  </div>
-                  <div>
-                      <a class="uk-inline" href="img/webp/nihol-5.webp" data-caption="Nihol salomatlik sihatgohi">
-                          <img src="img/webp/nihol-5.webp" alt="Nihol salomatlik sihatgohi">
-                      </a>
-                  </div>
-                  <div>
-                      <a class="uk-inline" href="img/webp/nihol-6.webp" data-caption="Nihol salomatlik sihatgohi">
-                          <img src="img/webp/nihol-6.webp" alt="Nihol salomatlik sihatgohi">
-                      </a>
-                  </div>
-                  <div>
-                      <a class="uk-inline" href="img/webp/nihol-7.webp" data-caption="Nihol salomatlik sihatgohi">
-                          <img src="img/webp/nihol-7.webp" alt="Nihol salomatlik sihatgohi">
-                      </a>
-                  </div>
-                  <div>
-                      <a class="uk-inline" href="img/webp/nihol-8.webp" data-caption="Nihol salomatlik sihatgohi">
-                          <img src="img/webp/nihol-8.webp" alt="Nihol salomatlik sihatgohi">
-                      </a>
-                  </div>
-                  <div>
-                      <a class="uk-inline" href="img/webp/nihol-9.webp" data-caption="Nihol salomatlik sihatgohi">
-                          <img src="img/webp/nihol-9.webp" alt="Nihol salomatlik sihatgohi">
-                      </a>
-                  </div>
-                  <div>
-                      <a class="uk-inline" href="img/webp/nihol-10.webp" data-caption="Nihol salomatlik sihatgohi">
-                          <img src="img/webp/nihol-10.webp" alt="Nihol salomatlik sihatgohi">
-                      </a>
-                  </div>
-                  <div>
-                      <a class="uk-inline" href="img/webp/nihol-11.webp" data-caption="Nihol salomatlik sihatgohi">
-                          <img src="img/webp/nihol-11.webp" alt="Nihol salomatlik sihatgohi">
-                      </a>
-                  </div>
-                  <div>
-                      <a class="uk-inline" href="img/webp/nihol-12.webp" data-caption="Nihol salomatlik sihatgohi">
-                          <img src="img/webp/nihol-12.webp" alt="Nihol salomatlik sihatgohi">
-                      </a>
-                  </div>
-                  
-              </div>
-          </section>
-            
-          <section >
-            <h2 class="uk-text-center" id="kontakt">Biz bilan bog'laning</h2>
-            <div class="uk-child-width-1-2@s" uk-grid>
-              
-              <div>
-                <form method="POST" class="form">
-                  <fieldset class="uk-fieldset">
-              
-                      <legend class="uk-legend">Murojat, taklif va fikrlar uchun</legend>
-              
-                      <div class="uk-margin">
-                          <input class="uk-input" type="text" name="ismFamiliya" placeholder="Ism va familiyangiz" required>
-                      </div>
-
-                      <div class="uk-margin">
-                        <input class="uk-input " type="text" name="telNomer" placeholder="Telefon raqamingiz" required>
-                      </div>           
-                           
-                      <div class="uk-margin">
-                          <textarea class="uk-textarea" name="messageText" rows="5" placeholder="Murojat matni" required></textarea>
-                      </div>                   
-              
-                  </fieldset>
-                  <button class="uk-button uk-button-primary uk-box-shadow-medium">Yuborish</button>
-                </form>
-                <div>
-                  <p>
-                    <br> 
-                      Murojat uchun telefon: +998 90 555 00 00 <br>
-                      Elektron pochta: nihol@gmail.com <br>
-                      Manzil: Uchqorgon tumani, Yog'du MFY, 1-uy <br>
-                      <hr>
-                      Ish vaqti: Ish kunlari, 9:00 dan 17:00 gacha
-                  </p>
-                </div>
-              </div>
-              
-              <div>
-                <div class="mapouter">
-                  <div class="gmap_canvas">
-                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Uchqorgon&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                  </div>
-                </div>
-                
-              </div>
+        <div>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Uchqorgon&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             </div>
-            
+          </div>
 
-          </section><!-- kontakt -end -->
+        </div>
+      </div>
+
+
+    </section><!-- kontakt -end -->
   </main>
 
   <footer>
     <div class="uk-padding uk-text-center">
       Nihol Salomatli Sihatgohi &copy; 2019
-    </div>     
+    </div>
   </footer>
 
   <script src="libs/uikit.min.js"></script>
   <script src="libs/uikit-icons.min.js"></script>
   <script src="js/bot.js"></script>
 </body>
+
 </html>
